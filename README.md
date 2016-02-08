@@ -1,4 +1,4 @@
-# ![icon](https://raw.githubusercontent.com/ziligy/JGScrollerController/master/jGScrollerController-github.png "icon") JGScrollerController
+# ![icon](https://raw.githubusercontent.com/ziligy/JGScrollerController/master/gifs/jGScrollerController-github.png "icon") JGScrollerController
 
 A Scrolling controller to scroll through UIViewController pages from your Storyboard. Simple config for quick and easy implementation.
 
