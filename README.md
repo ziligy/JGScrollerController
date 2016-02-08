@@ -23,6 +23,9 @@ A Scrolling controller to scroll through UIViewController pages from your Storyb
 * *optional* menu with live tracking
 * *optional* controls for next, previous, close, and page
 * pages can adopt *optional* procotol to recieve live scroller tracking
+* pages can call-back to scroller methods via an *optional* procotol
+* use auto-layout and works properly on all devices & orientations
+
 
 ## Installation
 * via Carthage: github "ziligy/JGScrollerController"
