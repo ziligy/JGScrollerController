@@ -2,7 +2,6 @@
 bin/
 bin-debug/
 bin-release/
-gifs/
 
 # Other files and folders
 .settings/

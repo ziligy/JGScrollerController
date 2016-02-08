@@ -12,7 +12,7 @@ A Scrolling controller to scroll through UIViewController pages from your Storyb
 <img src="https://raw.githubusercontent.com/ziligy/JGScrollerController/master/gifs/example-with-controls.gif" alt="example-with-controls"/>
 
 ## Example with menu pages
-<img src="https://raw.githubusercontent.com/ziligy/JGScrollerController/master/gifs/example-with-pages.gif" alt="example-with-pages"/>
+<img src="https://raw.githubusercontent.com/ziligy/JGScrollerController/master/gifs/example-menu-pages.gif" alt="example-menu-pages"/>
 
 ## Example with menu & all controls
 <img src="https://raw.githubusercontent.com/ziligy/JGScrollerController/master/gifs/example-all.gif" alt="example-all"/>
