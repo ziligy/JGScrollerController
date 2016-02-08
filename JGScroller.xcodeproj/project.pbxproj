@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE360D121C62B8B400028F1D /* JGScrollerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE360D111C62B8B400028F1D /* JGScrollerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE360D1E1C62B92700028F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE360D1D1C62B92700028F1D /* AppDelegate.swift */; };
+		CE360D251C62B92700028F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE360D241C62B92700028F1D /* Assets.xcassets */; };
+		CE360D281C62B92700028F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE360D261C62B92700028F1D /* LaunchScreen.storyboard */; };
+		CE360D311C62BE6C00028F1D /* JGScrollerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE360D2D1C62BE6C00028F1D /* JGScrollerController.swift */; };
+		CE360D321C62BE6C00028F1D /* JGScrollerControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE360D2E1C62BE6C00028F1D /* JGScrollerControllerConfig.swift */; };
+		CE360D331C62BE6C00028F1D /* ScrollerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE360D2F1C62BE6C00028F1D /* ScrollerControls.swift */; };
+		CE360D341C62BE6C00028F1D /* ScrollerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE360D301C62BE6C00028F1D /* ScrollerMenu.swift */; };
+		CE360D361C62BEC100028F1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE360D351C62BEC100028F1D /* Main.storyboard */; };
+		CE360D381C62BECD00028F1D /* ExampleMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE360D371C62BECD00028F1D /* ExampleMainController.swift */; };
+		CE360D421C62BFF400028F1D /* JGTapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE360D411C62BFF400028F1D /* JGTapButton.swift */; };
+		CE360D481C62DE5F00028F1D /* ic_favorite_white_36pt.png in Resources */ = {isa = PBXBuildFile; fileRef = CE360D431C62DE5F00028F1D /* ic_favorite_white_36pt.png */; };
+		CE360D491C62DE5F00028F1D /* ic_search_white_36pt.png in Resources */ = {isa = PBXBuildFile; fileRef = CE360D441C62DE5F00028F1D /* ic_search_white_36pt.png */; };
+		CE360D4A1C62DE5F00028F1D /* ic_camera_alt_white_36dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CE360D451C62DE5F00028F1D /* ic_camera_alt_white_36dp.png */; };
+		CE360D4B1C62DE5F00028F1D /* ic_timeline_white_36pt.png in Resources */ = {isa = PBXBuildFile; fileRef = CE360D461C62DE5F00028F1D /* ic_timeline_white_36pt.png */; };
+		CE360D4C1C62DE5F00028F1D /* ic_home_white_36pt.png in Resources */ = {isa = PBXBuildFile; fileRef = CE360D471C62DE5F00028F1D /* ic_home_white_36pt.png */; };
+		CE95F3881C6391E900A1FDF3 /* ExampleConfigAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95F3871C6391E900A1FDF3 /* ExampleConfigAll.swift */; };
+		CE95F38B1C639A6800A1FDF3 /* JGScrollerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE360D0E1C62B8B400028F1D /* JGScrollerController.framework */; };
+		CE95F38C1C639A6800A1FDF3 /* JGScrollerController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE360D0E1C62B8B400028F1D /* JGScrollerController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE95F3911C63A39700A1FDF3 /* ic_chevron_left_white_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = CE95F3901C63A39700A1FDF3 /* ic_chevron_left_white_48pt.png */; };
+		CE95F3931C63A3A100A1FDF3 /* ic_chevron_right_white_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = CE95F3921C63A3A100A1FDF3 /* ic_chevron_right_white_48pt.png */; };
+		CE95F3951C63A3AA00A1FDF3 /* ic_close_white_12pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE95F3941C63A3AA00A1FDF3 /* ic_close_white_12pt_2x.png */; };
+		CE95F3971C63C47500A1FDF3 /* ExampleConfigNoControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95F3961C63C47500A1FDF3 /* ExampleConfigNoControls.swift */; };
+		CE95F3991C63C5D100A1FDF3 /* ExampleConfigMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95F3981C63C5D100A1FDF3 /* ExampleConfigMenu.swift */; };
+		CE95F39B1C63CB9900A1FDF3 /* ExampleConfigMenuPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95F39A1C63CB9900A1FDF3 /* ExampleConfigMenuPages.swift */; };
+		CE95F39D1C63CFF500A1FDF3 /* ExampleConfigControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95F39C1C63CFF500A1FDF3 /* ExampleConfigControls.swift */; };
+		CE95F39F1C63ED7300A1FDF3 /* CloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95F39E1C63ED7300A1FDF3 /* CloseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE95F38D1C639A6800A1FDF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE360D031C62B89000028F1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE360D0D1C62B8B400028F1D;
+			remoteInfo = JGScrollerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE95F38F1C639A6800A1FDF3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE95F38C1C639A6800A1FDF3 /* JGScrollerController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE360D0E1C62B8B400028F1D /* JGScrollerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGScrollerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE360D111C62B8B400028F1D /* JGScrollerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGScrollerController.h; sourceTree = "<group>"; };
+		CE360D131C62B8B400028F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE360D1B1C62B92700028F1D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE360D1D1C62B92700028F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE360D241C62B92700028F1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE360D271C62B92700028F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE360D291C62B92700028F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE360D2D1C62BE6C00028F1D /* JGScrollerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGScrollerController.swift; sourceTree = "<group>"; };
+		CE360D2E1C62BE6C00028F1D /* JGScrollerControllerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGScrollerControllerConfig.swift; sourceTree = "<group>"; };
+		CE360D2F1C62BE6C00028F1D /* ScrollerControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollerControls.swift; sourceTree = "<group>"; };
+		CE360D301C62BE6C00028F1D /* ScrollerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollerMenu.swift; sourceTree = "<group>"; };
+		CE360D351C62BEC100028F1D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CE360D371C62BECD00028F1D /* ExampleMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleMainController.swift; sourceTree = "<group>"; };
+		CE360D411C62BFF400028F1D /* JGTapButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGTapButton.swift; sourceTree = "<group>"; };
+		CE360D431C62DE5F00028F1D /* ic_favorite_white_36pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_favorite_white_36pt.png; sourceTree = "<group>"; };
+		CE360D441C62DE5F00028F1D /* ic_search_white_36pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_search_white_36pt.png; sourceTree = "<group>"; };
+		CE360D451C62DE5F00028F1D /* ic_camera_alt_white_36dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_camera_alt_white_36dp.png; sourceTree = "<group>"; };
+		CE360D461C62DE5F00028F1D /* ic_timeline_white_36pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_timeline_white_36pt.png; sourceTree = "<group>"; };
+		CE360D471C62DE5F00028F1D /* ic_home_white_36pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_white_36pt.png; sourceTree = "<group>"; };
+		CE95F3871C6391E900A1FDF3 /* ExampleConfigAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleConfigAll.swift; sourceTree = "<group>"; };
+		CE95F3901C63A39700A1FDF3 /* ic_chevron_left_white_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_chevron_left_white_48pt.png; sourceTree = "<group>"; };
+		CE95F3921C63A3A100A1FDF3 /* ic_chevron_right_white_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_chevron_right_white_48pt.png; sourceTree = "<group>"; };
+		CE95F3941C63A3AA00A1FDF3 /* ic_close_white_12pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close_white_12pt_2x.png; sourceTree = "<group>"; };
+		CE95F3961C63C47500A1FDF3 /* ExampleConfigNoControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleConfigNoControls.swift; sourceTree = "<group>"; };
+		CE95F3981C63C5D100A1FDF3 /* ExampleConfigMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleConfigMenu.swift; sourceTree = "<group>"; };
+		CE95F39A1C63CB9900A1FDF3 /* ExampleConfigMenuPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleConfigMenuPages.swift; sourceTree = "<group>"; };
+		CE95F39C1C63CFF500A1FDF3 /* ExampleConfigControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleConfigControls.swift; sourceTree = "<group>"; };
+		CE95F39E1C63ED7300A1FDF3 /* CloseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE360D0A1C62B8B400028F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE360D181C62B92700028F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95F38B1C639A6800A1FDF3 /* JGScrollerController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE360D021C62B89000028F1D = {
+			isa = PBXGroup;
+			children = (
+				CE360D101C62B8B400028F1D /* JGScrollerController */,
+				CE360D1C1C62B92700028F1D /* Example */,
+				CE360D0F1C62B8B400028F1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE360D0F1C62B8B400028F1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE360D0E1C62B8B400028F1D /* JGScrollerController.framework */,
+				CE360D1B1C62B92700028F1D /* Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE360D101C62B8B400028F1D /* JGScrollerController */ = {
+			isa = PBXGroup;
+			children = (
+				CE360D2D1C62BE6C00028F1D /* JGScrollerController.swift */,
+				CE360D2E1C62BE6C00028F1D /* JGScrollerControllerConfig.swift */,
+				CE360D2F1C62BE6C00028F1D /* ScrollerControls.swift */,
+				CE360D301C62BE6C00028F1D /* ScrollerMenu.swift */,
+				CEAAA5351C679A9F00D54FC0 /* JGToolBox */,
+				CE360D3F1C62BF3500028F1D /* ImageAssets */,
+				CE360D401C62BF5A00028F1D /* Support */,
+			);
+			path = JGScrollerController;
+			sourceTree = "<group>";
+		};
+		CE360D1C1C62B92700028F1D /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				CE360D351C62BEC100028F1D /* Main.storyboard */,
+				CE360D371C62BECD00028F1D /* ExampleMainController.swift */,
+				CE95F3871C6391E900A1FDF3 /* ExampleConfigAll.swift */,
+				CE95F39C1C63CFF500A1FDF3 /* ExampleConfigControls.swift */,
+				CE95F3981C63C5D100A1FDF3 /* ExampleConfigMenu.swift */,
+				CE95F39A1C63CB9900A1FDF3 /* ExampleConfigMenuPages.swift */,
+				CE95F3961C63C47500A1FDF3 /* ExampleConfigNoControls.swift */,
+				CE95F39E1C63ED7300A1FDF3 /* CloseViewController.swift */,
+				CE360D4D1C62DFFF00028F1D /* ExampleImages */,
+				CE95F3891C63935500A1FDF3 /* Support */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		CE360D3F1C62BF3500028F1D /* ImageAssets */ = {
+			isa = PBXGroup;
+			children = (
+				CE95F3921C63A3A100A1FDF3 /* ic_chevron_right_white_48pt.png */,
+				CE95F3941C63A3AA00A1FDF3 /* ic_close_white_12pt_2x.png */,
+				CE95F3901C63A39700A1FDF3 /* ic_chevron_left_white_48pt.png */,
+			);
+			name = ImageAssets;
+			sourceTree = "<group>";
+		};
+		CE360D401C62BF5A00028F1D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CE360D111C62B8B400028F1D /* JGScrollerController.h */,
+				CE360D131C62B8B400028F1D /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		CE360D4D1C62DFFF00028F1D /* ExampleImages */ = {
+			isa = PBXGroup;
+			children = (
+				CE360D431C62DE5F00028F1D /* ic_favorite_white_36pt.png */,
+				CE360D441C62DE5F00028F1D /* ic_search_white_36pt.png */,
+				CE360D451C62DE5F00028F1D /* ic_camera_alt_white_36dp.png */,
+				CE360D461C62DE5F00028F1D /* ic_timeline_white_36pt.png */,
+				CE360D471C62DE5F00028F1D /* ic_home_white_36pt.png */,
+			);
+			name = ExampleImages;
+			sourceTree = "<group>";
+		};
+		CE95F3891C63935500A1FDF3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CE360D291C62B92700028F1D /* Info.plist */,
+				CE360D1D1C62B92700028F1D /* AppDelegate.swift */,
+				CE360D241C62B92700028F1D /* Assets.xcassets */,
+				CE360D261C62B92700028F1D /* LaunchScreen.storyboard */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		CEAAA5351C679A9F00D54FC0 /* JGToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				CE360D411C62BFF400028F1D /* JGTapButton.swift */,
+			);
+			name = JGToolBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE360D0B1C62B8B400028F1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE360D121C62B8B400028F1D /* JGScrollerController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE360D0D1C62B8B400028F1D /* JGScrollerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE360D141C62B8B400028F1D /* Build configuration list for PBXNativeTarget "JGScrollerController" */;
+			buildPhases = (
+				CE360D091C62B8B400028F1D /* Sources */,
+				CE360D0A1C62B8B400028F1D /* Frameworks */,
+				CE360D0B1C62B8B400028F1D /* Headers */,
+				CE360D0C1C62B8B400028F1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JGScrollerController;
+			productName = JGScrollerController;
+			productReference = CE360D0E1C62B8B400028F1D /* JGScrollerController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE360D1A1C62B92700028F1D /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE360D2A1C62B92700028F1D /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				CE360D171C62B92700028F1D /* Sources */,
+				CE360D181C62B92700028F1D /* Frameworks */,
+				CE360D191C62B92700028F1D /* Resources */,
+				CE95F38F1C639A6800A1FDF3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE95F38E1C639A6800A1FDF3 /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = CE360D1B1C62B92700028F1D /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE360D031C62B89000028F1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					CE360D0D1C62B8B400028F1D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CE360D1A1C62B92700028F1D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = CE360D061C62B89000028F1D /* Build configuration list for PBXProject "JGScroller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE360D021C62B89000028F1D;
+			productRefGroup = CE360D0F1C62B8B400028F1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE360D0D1C62B8B400028F1D /* JGScrollerController */,
+				CE360D1A1C62B92700028F1D /* Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE360D0C1C62B8B400028F1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95F3931C63A3A100A1FDF3 /* ic_chevron_right_white_48pt.png in Resources */,
+				CE95F3951C63A3AA00A1FDF3 /* ic_close_white_12pt_2x.png in Resources */,
+				CE95F3911C63A39700A1FDF3 /* ic_chevron_left_white_48pt.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE360D191C62B92700028F1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE360D481C62DE5F00028F1D /* ic_favorite_white_36pt.png in Resources */,
+				CE360D4C1C62DE5F00028F1D /* ic_home_white_36pt.png in Resources */,
+				CE360D361C62BEC100028F1D /* Main.storyboard in Resources */,
+				CE360D281C62B92700028F1D /* LaunchScreen.storyboard in Resources */,
+				CE360D4A1C62DE5F00028F1D /* ic_camera_alt_white_36dp.png in Resources */,
+				CE360D251C62B92700028F1D /* Assets.xcassets in Resources */,
+				CE360D4B1C62DE5F00028F1D /* ic_timeline_white_36pt.png in Resources */,
+				CE360D491C62DE5F00028F1D /* ic_search_white_36pt.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE360D091C62B8B400028F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE360D421C62BFF400028F1D /* JGTapButton.swift in Sources */,
+				CE360D341C62BE6C00028F1D /* ScrollerMenu.swift in Sources */,
+				CE360D311C62BE6C00028F1D /* JGScrollerController.swift in Sources */,
+				CE360D321C62BE6C00028F1D /* JGScrollerControllerConfig.swift in Sources */,
+				CE360D331C62BE6C00028F1D /* ScrollerControls.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE360D171C62B92700028F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95F39B1C63CB9900A1FDF3 /* ExampleConfigMenuPages.swift in Sources */,
+				CE95F39F1C63ED7300A1FDF3 /* CloseViewController.swift in Sources */,
+				CE95F39D1C63CFF500A1FDF3 /* ExampleConfigControls.swift in Sources */,
+				CE360D381C62BECD00028F1D /* ExampleMainController.swift in Sources */,
+				CE360D1E1C62B92700028F1D /* AppDelegate.swift in Sources */,
+				CE95F3881C6391E900A1FDF3 /* ExampleConfigAll.swift in Sources */,
+				CE95F3971C63C47500A1FDF3 /* ExampleConfigNoControls.swift in Sources */,
+				CE95F3991C63C5D100A1FDF3 /* ExampleConfigMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE95F38E1C639A6800A1FDF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE360D0D1C62B8B400028F1D /* JGScrollerController */;
+			targetProxy = CE95F38D1C639A6800A1FDF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE360D261C62B92700028F1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE360D271C62B92700028F1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE360D071C62B89000028F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+			};
+			name = Debug;
+		};
+		CE360D081C62B89000028F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+			};
+			name = Release;
+		};
+		CE360D151C62B8B400028F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = JGScrollerController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGScrollerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE360D161C62B8B400028F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = JGScrollerController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGScrollerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE360D2B1C62B92700028F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE360D2C1C62B92700028F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE360D061C62B89000028F1D /* Build configuration list for PBXProject "JGScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE360D071C62B89000028F1D /* Debug */,
+				CE360D081C62B89000028F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE360D141C62B8B400028F1D /* Build configuration list for PBXNativeTarget "JGScrollerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE360D151C62B8B400028F1D /* Debug */,
+				CE360D161C62B8B400028F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE360D2A1C62B92700028F1D /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE360D2B1C62B92700028F1D /* Debug */,
+				CE360D2C1C62B92700028F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE360D031C62B89000028F1D /* Project object */;
+}

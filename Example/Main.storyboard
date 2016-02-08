@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Sr1-JQ-72c">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Example Main Controller-->
+        <scene sceneID="wiJ-N7-O2f">
+            <objects>
+                <viewController id="Sr1-JQ-72c" customClass="ExampleMainController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6W5-HF-dNI"/>
+                        <viewControllerLayoutGuide type="bottom" id="qdi-Jj-6eL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="euF-Po-uuR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MxK-eY-ytw" customClass="JGTapButton" customModule="JGScrollerController">
+                                <rect key="frame" x="175" y="60" width="250" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="E4r-Pc-4xS"/>
+                                    <constraint firstAttribute="width" constant="250" id="Zwp-9M-XPl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="example with menu"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ExampleMenu" destination="Sr1-JQ-72c" eventType="touchUpInside" id="AGL-rq-TSs"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrr-Cw-xOH" customClass="JGTapButton" customModule="JGScrollerController">
+                                <rect key="frame" x="175" y="115" width="250" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="19U-1o-6YZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="QhB-jn-s4p"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="example with controls"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ExampleControls" destination="Sr1-JQ-72c" eventType="touchUpInside" id="Ihs-Ql-jTF"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ql7-0a-hxz" customClass="JGTapButton" customModule="JGScrollerController">
+                                <rect key="frame" x="175" y="170" width="250" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="tb3-Pj-NlN"/>
+                                    <constraint firstAttribute="height" constant="40" id="xh5-vh-mvT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="example menu pages"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ExampleMenuPages" destination="Sr1-JQ-72c" eventType="touchUpInside" id="Mjv-9h-tJD"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXw-q8-0WG" customClass="JGTapButton" customModule="JGScrollerController">
+                                <rect key="frame" x="175" y="225" width="250" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="7dT-gM-0wK"/>
+                                    <constraint firstAttribute="height" constant="40" id="nJo-4x-D0q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="example all"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ExampleAll" destination="Sr1-JQ-72c" eventType="touchUpInside" id="KOO-iO-MB3"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNk-M4-ymL" customClass="JGTapButton" customModule="JGScrollerController">
+                                <rect key="frame" x="175" y="280" width="250" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="brE-oe-cEp"/>
+                                    <constraint firstAttribute="height" constant="40" id="vFk-cX-uL0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="example with none"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ExampleNoControls" destination="Sr1-JQ-72c" eventType="touchUpInside" id="G4T-Rk-Lnu"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIn-Ly-P8C">
+                                <rect key="frame" x="187" y="23" width="226" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="JGScrollerController">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99237936735153198" green="0.78305763006210327" blue="0.0023634906392544508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="25" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41338782051282053" green="0.3033155719846784" blue="0.20722064530687545" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FXw-q8-0WG" firstAttribute="centerX" secondItem="euF-Po-uuR" secondAttribute="centerX" id="GU1-ZF-u76"/>
+                            <constraint firstItem="MxK-eY-ytw" firstAttribute="centerX" secondItem="euF-Po-uuR" secondAttribute="centerX" id="GdR-2V-57Y"/>
+                            <constraint firstItem="eNk-M4-ymL" firstAttribute="centerX" secondItem="euF-Po-uuR" secondAttribute="centerX" id="Gfh-hz-VML"/>
+                            <constraint firstItem="MxK-eY-ytw" firstAttribute="top" secondItem="6W5-HF-dNI" secondAttribute="bottom" constant="40" id="JTl-Qh-AEZ"/>
+                            <constraint firstItem="yIn-Ly-P8C" firstAttribute="top" secondItem="6W5-HF-dNI" secondAttribute="bottom" constant="3" id="Jdi-ae-d5y"/>
+                            <constraint firstItem="FXw-q8-0WG" firstAttribute="top" secondItem="Ql7-0a-hxz" secondAttribute="bottom" constant="15" id="MOp-Ia-LlM"/>
+                            <constraint firstItem="Hrr-Cw-xOH" firstAttribute="centerX" secondItem="euF-Po-uuR" secondAttribute="centerX" id="NfF-Df-rMv"/>
+                            <constraint firstItem="Ql7-0a-hxz" firstAttribute="centerX" secondItem="euF-Po-uuR" secondAttribute="centerX" id="SAn-09-zzf"/>
+                            <constraint firstItem="Hrr-Cw-xOH" firstAttribute="top" secondItem="MxK-eY-ytw" secondAttribute="bottom" constant="15" id="Sgy-7c-weq"/>
+                            <constraint firstItem="eNk-M4-ymL" firstAttribute="top" secondItem="FXw-q8-0WG" secondAttribute="bottom" constant="15" id="gr0-cm-r6r"/>
+                            <constraint firstItem="Ql7-0a-hxz" firstAttribute="top" secondItem="Hrr-Cw-xOH" secondAttribute="bottom" constant="15" id="nTC-eh-wnd"/>
+                            <constraint firstItem="yIn-Ly-P8C" firstAttribute="centerX" secondItem="euF-Po-uuR" secondAttribute="centerX" id="tS2-Ya-c8L"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5u4-gf-adQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405" y="-285"/>
+        </scene>
+        <!--Scroller Controller-->
+        <scene sceneID="ult-hv-bqT">
+            <objects>
+                <viewController storyboardIdentifier="scroller" id="TJu-8a-YAS" customClass="JGScrollerController" customModule="JGScrollerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uzd-5w-nyH"/>
+                        <viewControllerLayoutGuide type="bottom" id="HW7-Lv-O5z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yoc-Cq-Ava">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYl-Q9-amA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="369"/>
+        </scene>
+        <!--Page Two-->
+        <scene sceneID="fgJ-Zs-rXk">
+            <objects>
+                <viewController storyboardIdentifier="pageTwo" title="Page Two" id="Le4-MZ-FvL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NhV-7f-FVa"/>
+                        <viewControllerLayoutGuide type="bottom" id="hcN-qv-6CB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bLa-vH-VnR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favorite_white_36pt.png" translatesAutoresizingMaskIntoConstraints="NO" id="bcu-26-wte">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="24e-dK-85D"/>
+                                    <constraint firstAttribute="width" constant="100" id="N27-GC-IEx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49434282629734105" green="0.67947295444649725" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bcu-26-wte" firstAttribute="centerY" secondItem="bLa-vH-VnR" secondAttribute="centerY" id="rsc-Gb-uto"/>
+                            <constraint firstItem="bcu-26-wte" firstAttribute="centerX" secondItem="bLa-vH-VnR" secondAttribute="centerX" id="tLV-lx-iKq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qo-PL-YLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2026" y="369"/>
+        </scene>
+        <!--Page One-->
+        <scene sceneID="HCY-dl-OeG">
+            <objects>
+                <viewController storyboardIdentifier="pageOne" title="Page One" id="ied-9S-DB5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pex-5X-KI0"/>
+                        <viewControllerLayoutGuide type="bottom" id="hTa-mz-Kgw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t7f-CK-HQ4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_camera_alt_white_36dp.png" translatesAutoresizingMaskIntoConstraints="NO" id="8yT-qJ-hiR">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SQX-i8-viK"/>
+                                    <constraint firstAttribute="height" constant="100" id="pcW-Ho-vJe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4735030073" green="1" blue="0.53197211259999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8yT-qJ-hiR" firstAttribute="centerY" secondItem="t7f-CK-HQ4" secondAttribute="centerY" id="KvV-oh-09e"/>
+                            <constraint firstItem="8yT-qJ-hiR" firstAttribute="centerX" secondItem="t7f-CK-HQ4" secondAttribute="centerX" id="v3n-LV-Z5j"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HlX-Yw-Xwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2648" y="-285"/>
+        </scene>
+        <!--Close-->
+        <scene sceneID="GuR-5L-F9f">
+            <objects>
+                <viewController storyboardIdentifier="close" title="Close" id="5Jx-Nx-8Sc" customClass="CloseViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5R4-c9-hxj"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZSA-81-I0X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Sp-5N-bIh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfw-n8-Zu9" customClass="JGTapButton" customModule="JGScrollerController">
+                                <rect key="frame" x="240" y="240" width="120" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="WvT-W9-xOa"/>
+                                    <constraint firstAttribute="width" constant="120" id="dX8-Hx-BwR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Close"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontsize">
+                                        <real key="value" value="41"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="CloseScroller" destination="5Jx-Nx-8Sc" eventType="touchUpInside" id="aMH-fc-Xd0"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.52245656602328694" blue="0.63952035640855998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vfw-n8-Zu9" firstAttribute="centerX" secondItem="8Sp-5N-bIh" secondAttribute="centerX" id="A1c-hN-epv"/>
+                            <constraint firstItem="Vfw-n8-Zu9" firstAttribute="centerY" secondItem="8Sp-5N-bIh" secondAttribute="centerY" id="qi7-rx-h5W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnf-GD-3y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3292" y="-285"/>
+        </scene>
+        <!--Page Three-->
+        <scene sceneID="qNC-eZ-2xF">
+            <objects>
+                <viewController storyboardIdentifier="pageThree" title="Page Three" id="jkg-Uf-zej" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w4C-XZ-LSp"/>
+                        <viewControllerLayoutGuide type="bottom" id="2H8-kt-DoM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="82L-Ql-GVb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_timeline_white_36pt.png" translatesAutoresizingMaskIntoConstraints="NO" id="I50-Jk-JCv">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fiS-Qm-GIS"/>
+                                    <constraint firstAttribute="width" constant="100" id="kkv-kh-UtR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87592281437514885" green="0.55092293373423207" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I50-Jk-JCv" firstAttribute="centerX" secondItem="82L-Ql-GVb" secondAttribute="centerX" id="cN7-Gz-jfx"/>
+                            <constraint firstItem="I50-Jk-JCv" firstAttribute="centerY" secondItem="82L-Ql-GVb" secondAttribute="centerY" id="qfe-2j-U22"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIq-ho-VfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2648" y="369"/>
+        </scene>
+        <!--Page Zero-->
+        <scene sceneID="URS-9T-7hI">
+            <objects>
+                <viewController storyboardIdentifier="pageZero" title="Page Zero" id="Js1-SM-zyL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VI4-bO-O3t"/>
+                        <viewControllerLayoutGuide type="bottom" id="DNJ-Sm-pz9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="amC-PR-HUq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_white_36pt.png" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-d3-d4s">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="B1K-Zy-jFh"/>
+                                    <constraint firstAttribute="width" constant="100" id="mzo-MV-MZl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.68812573340133809" blue="0.32603613664081998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SPm-d3-d4s" firstAttribute="centerX" secondItem="amC-PR-HUq" secondAttribute="centerX" id="2cD-83-aKs"/>
+                            <constraint firstItem="SPm-d3-d4s" firstAttribute="centerY" secondItem="amC-PR-HUq" secondAttribute="centerY" id="b1F-co-fBs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0l-yz-Lrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2026" y="-285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_camera_alt_white_36dp.png" width="144" height="144"/>
+        <image name="ic_favorite_white_36pt.png" width="36" height="36"/>
+        <image name="ic_home_white_36pt.png" width="36" height="36"/>
+        <image name="ic_timeline_white_36pt.png" width="36" height="36"/>
+    </resources>
+</document>
