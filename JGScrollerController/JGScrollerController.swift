@@ -37,7 +37,7 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
     private var scrollerControls: ScrollerControls!
     
     private var scrollerMenu: ScrollerMenu!
-
+    
     private let pageControl =  UIPageControl()
     private var scrollview = UIScrollView()
     private var controllers = [UIViewController]()
@@ -51,7 +51,7 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
             return Int((scrollview.contentOffset.x / view.bounds.size.width))
         }
     }
-
+    
     public func initScrollerController(scrollerConfig: JGScrollerControllerConfig) {
         self.scrollerConfig = scrollerConfig
         
@@ -70,7 +70,7 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupScrollView()
         createScrollerControls()
         createPageControl()
@@ -109,7 +109,7 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
         scrollview.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor).active = true
         scrollview.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor).active = true
     }
-
+    
     public func addViewController(vc:UIViewController) {
         controllers.append(vc)
         vc.view.translatesAutoresizingMaskIntoConstraints = false
@@ -156,6 +156,7 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
             
             let newView = vc.view
             
+            newView.topAnchor.constraintEqualToAnchor(scrollview.topAnchor).active = true
             newView.heightAnchor.constraintEqualToAnchor(scrollview.heightAnchor).active = true
             newView.widthAnchor.constraintEqualToAnchor(scrollview.widthAnchor).active = true
             
@@ -178,7 +179,7 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
         pageControl.currentPage = currentPage
         
         scrollViewDidEndScroll(currentPage)
-    
+        
         if scrollerConfig.showNextAndPreviousControls {
             scrollerControls!.hideNextControl(currentPage == controllers.count - 1 ? true : false)
             scrollerControls!.hidePrevControl(currentPage == 0 ? true : false)
@@ -241,13 +242,15 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
     
     // MARK: trigger updates/delegates
     
+    
     public func scrollViewDidScroll(sv: UIScrollView) {
         
         let contentWidth = view.bounds.size.width
         let currentPage = self.currentPage
         let positionX = sv.contentOffset.x
         
-        let offset = ((positionX + contentWidth) - (contentWidth * CGFloat(currentPage))) / contentWidth
+        // offset is 0.0 to 1.0
+        let offset = (((positionX + contentWidth) - (contentWidth * CGFloat(currentPage))) / contentWidth) - 1
         
         delegateScroll?.scrollerDidScroll(positionX: sv.contentOffset.x, offset: offset)
         
@@ -281,6 +284,5 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
         }
     }
     
-   
+    
 }
-
