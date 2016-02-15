@@ -50,11 +50,11 @@ internal class ScrollerMenu: UIStackView, JGScrollPage {
         
         self.translatesAutoresizingMaskIntoConstraints = false
         self.spacing = itemSpacing
-
+        
         self.axis = UILayoutConstraintAxis.Horizontal
         self.distribution = UIStackViewDistribution.Fill
         self.alignment = UIStackViewAlignment.Center
-
+        
         setOrientation(parent, orientaion: orientaion)
         
         for name in imageNames {
@@ -94,11 +94,11 @@ internal class ScrollerMenu: UIStackView, JGScrollPage {
         let newTap = arrangedSubviews[index] as! JGTapButton
         newTap.mainColor = highlightColor
         newTap.setNeedsDisplay()
-
+        
         currentIndex = index
     }
     
-    func scrollerDidScroll(positionX positionX: CGFloat, offset: CGFloat) {}
+    func scrollerDidScroll(positionX: CGFloat, offset: CGFloat) {}
     
     func scrollerDidEndAtPage(currentPage: Int) {
         setHighlightColor(currentPage)
@@ -123,17 +123,17 @@ internal class ScrollerMenu: UIStackView, JGScrollPage {
         case .BottomRight: bottom.active = true; right.active = true
             
         case .LeftCenter: left.active = true; centerY.active = true
-            self.axis = UILayoutConstraintAxis.Vertical
+        self.axis = UILayoutConstraintAxis.Vertical
         case .LeftTop: left.active = true; top.active = true
-            self.axis = UILayoutConstraintAxis.Vertical
+        self.axis = UILayoutConstraintAxis.Vertical
         case .LeftBottom: left.active = true; bottom.active = true
-            self.axis = UILayoutConstraintAxis.Vertical
+        self.axis = UILayoutConstraintAxis.Vertical
         case .RightCenter: right.active = true; centerY.active = true
-            self.axis = UILayoutConstraintAxis.Vertical
+        self.axis = UILayoutConstraintAxis.Vertical
         case .RightTop: right.active = true; top.active = true
-            self.axis = UILayoutConstraintAxis.Vertical
+        self.axis = UILayoutConstraintAxis.Vertical
         case .RightBottom: right.active = true; bottom.active = true
-            self.axis = UILayoutConstraintAxis.Vertical
+        self.axis = UILayoutConstraintAxis.Vertical
         case .CenterCenter: centerX.active = true; centerY.active = true
         }
     }

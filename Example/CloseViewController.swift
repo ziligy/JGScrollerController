@@ -20,11 +20,11 @@ public class CloseViewController: UIViewController, JGScrollerControlLink, JGScr
         super.viewDidLoad()
     }
     
-    public func scrollerDidScroll(positionX positionX: CGFloat, offset: CGFloat) {
+    public func scrollerDidScroll(positionX: CGFloat, offset: CGFloat) {
         print("positionX: \(positionX) offset: \(offset)")
     }
     
-    public func scrollerDidEndAtPage(currentPage: Int) {
+    public func scrollerDidEndAtPage(currentPage: Int, pageIndexNumber: Int) {
         print(currentPage)
     }
 }

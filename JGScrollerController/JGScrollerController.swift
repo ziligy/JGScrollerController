@@ -8,9 +8,12 @@
 import UIKit
 
 /// adopt this to recieve scroller status
-public protocol JGScrollPage {
-    func scrollerDidScroll(positionX positionX: CGFloat, offset: CGFloat)
-    func scrollerDidEndAtPage(currentPage: Int)
+@objc public protocol JGScrollPage {
+    func scrollerDidScroll(positionX: CGFloat, offset: CGFloat)
+    // user pages should adopt this
+    optional func scrollerDidEndAtPage(currentPage: Int, pageIndexNumber: Int)
+    // controls, e.g. ScrollerMenu adopt this
+    optional func scrollerDidEndAtPage(currentPage: Int)
 }
 
 /// pages that want to call-back to the scroller's controls should adopt this
@@ -225,7 +228,6 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
         pageControl.currentPage = 0
     }
     
-    
     override public func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         
@@ -242,26 +244,23 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
     
     // MARK: trigger updates/delegates
     
-    
     public func scrollViewDidScroll(sv: UIScrollView) {
         
         let contentWidth = view.bounds.size.width
         let currentPage = self.currentPage
         let positionX = sv.contentOffset.x
+        let offset = (positionX / contentWidth)
         
-        // offset is 0.0 to 1.0
-        let offset = (((positionX + contentWidth) - (contentWidth * CGFloat(currentPage))) / contentWidth) - 1
+        delegateScroll?.scrollerDidScroll(sv.contentOffset.x, offset: offset)
         
-        delegateScroll?.scrollerDidScroll(positionX: sv.contentOffset.x, offset: offset)
-        
-        let lookAheadAndBack = 1 // number of pages to update before & after current page
+        let lookAheadAndBack = 3 // number of pages to update before & after current page
         
         for (index, value) in controllers.enumerate() {
             
             if let vcWantsScrollUpdate = value as? JGScrollPage {
                 
                 if (index >= currentPage - lookAheadAndBack && index <= currentPage + lookAheadAndBack) {
-                    vcWantsScrollUpdate.scrollerDidScroll(positionX: positionX, offset: offset)
+                    vcWantsScrollUpdate.scrollerDidScroll(positionX, offset: offset)
                 }
             }
         }
@@ -269,20 +268,21 @@ public class JGScrollerController: UIViewController, UIScrollViewDelegate, JGScr
     
     public func scrollViewDidEndScroll(currentPage: Int) {
         
-        delegateScroll?.scrollerDidEndAtPage(currentPage)
+        // pageNumber is only used by pages
+        delegateScroll?.scrollerDidEndAtPage!(currentPage)
         
-        let lookAheadAndBack = 1 // number of pages to update before & after current page
+        let lookAheadAndBack = 5 // number of pages to update before & after current page
         
         for (index, value) in controllers.enumerate() {
             
             if let vcWantsScrollUpdate = value as? JGScrollPage {
                 
                 if (index >= currentPage - lookAheadAndBack && index <= currentPage + lookAheadAndBack) {
-                    vcWantsScrollUpdate.scrollerDidEndAtPage(currentPage)
+                    vcWantsScrollUpdate.scrollerDidEndAtPage!(currentPage, pageIndexNumber: index)
                 }
             }
         }
     }
     
-    
 }
+
